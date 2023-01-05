@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    background-color: aqua;
+    padding: 16px;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+.cell {
+    flex-grow: 1;
+}
+
+.square-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.square-img::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.square-img-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
